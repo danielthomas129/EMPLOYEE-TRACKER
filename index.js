@@ -28,8 +28,8 @@ const connection = mysql.createConnection({
     user: 'root',
 
     // Your password
-    password: 'chargers619',
-    database: 'employees'
+    password: 'Password12',
+    database: 'employeesdb'
 });
 
 connection.connect(err => {
@@ -199,7 +199,7 @@ async function addEmployee() {
                 for (const data of res) {
                     data.fullName = `${data.first_name} ${data.last_name}`;
                     if (data.fullName === manager) {
-                        managerId = data.id;
+                        managerId = parseInt(data.id);
                         managerName = data.fullName;
                         console.log(managerId);
                         console.log(managerName);
@@ -214,7 +214,7 @@ async function addEmployee() {
                     first_name: addname.first,
                     last_name: addname.last,
                     role_id: roleId,
-                    manager_id: parseInt(managerId)
+                    manager_id: managerId
                 },
                 (err, res) => {
                     if (err) throw err;

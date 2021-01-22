@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS employees;
-CREATE DATABASE employees;
-USE employees;
+DROP DATABASE IF EXISTS employeesdb;
+CREATE DATABASE employeesdb;
+USE employeesdb;
 CREATE TABLE department (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(30) UNIQUE NOT NULL
@@ -24,7 +24,7 @@ CREATE TABLE employee (
   INDEX man_ind (manager_id),
   CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employee(id) ON DELETE SET NULL
 );
-use employees;
+
 INSERT INTO department
     (name)
 VALUES
@@ -39,7 +39,7 @@ VALUES
     ('Department Manager', 65000, 1),
     ('Brand Manager', 60000, 2),
     ('Sales Associate', 40000, 3),
-    ('Makeup Artist',50000, 2),
+    ('Makeup Artist',50000, 2);
   
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
@@ -49,7 +49,7 @@ VALUES
     ('Daniel', 'Thomas', 3, NULL),
     ('Sarah', 'Brown', 4, 3),
     ('Lana', 'Mock', 5, NULL),
-    ('Juju', 'Choy', 6, 5),
-    ('Rolanda', 'Brown', 7, NULL),
-    ('Alex', 'Moore', 8, 7);
+    ('Juju', 'Choy', 5, 5),
+    ('Rolanda', 'Brown', 5, NULL),
+    ('Alex', 'Moore', 5, 7);
     
