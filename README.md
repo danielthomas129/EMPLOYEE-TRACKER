@@ -1,7 +1,4 @@
-# EMPLOYEE-TRACKER-MySQL
-
-# Unit 12 MySQL Homework: Employee Tracker
-
+## *** EMPLOYEE-TRACKER-MySQL ***
 
 ## DESCRIPTION
 A command-line application that allows the user to:
@@ -42,10 +39,9 @@ The following animation demonstrates the application functionality:
 * ```npm install mysql inquirer```
 * ```npm install console.table```
 * ```mysql -u root -p```
+
 If choosing to use from terminal, open terminal and run    
 ```node server.js```   
-
-
 ## DATABASE SCHEMA
 
 ![Database Schema](Assets/schema.png)
@@ -74,7 +70,7 @@ If choosing to use from terminal, open terminal and run
 ## GitHub Repository & Deployed Site
 *GitHub: [@danielthomas129](https://github.com/danielthomas129/EMPLOYEE-TRACKER-MySQL)
 *[Github-Repository](https://github.com/danielthomas129/EMPLOYEE-TRACKER-MySQL)
-*DEMO: [VIDEO-LINK](https://drive.google.com/file/d/1f50F8O-9k8NITC6kPzom6TUnwOE2Ib5k/view)
+
 - - -
 
 ### Daniel Thomas Guadalupe
