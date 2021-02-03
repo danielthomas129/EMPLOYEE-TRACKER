@@ -2,6 +2,8 @@
 
 const mysql = require('mysql');
 const inquirer = require('inquirer');
+const figlet = require('figlet');
+const lolcatjs = require('lolcatjs');
 require('console.table');
 
 
@@ -34,8 +36,21 @@ const connection = mysql.createConnection({
 
 connection.connect(err => {
     if (err) throw err;
-    prompt();
+    displayWelcome();
+    
 });
+function displayWelcome() { 
+figlet('Welcome', function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(data)
+    prompt();
+});    
+}
+
 
 function prompt() {
     inquirer
@@ -101,11 +116,22 @@ function viewAllEmployees() {
     ORDER BY employee.id;`;
     connection.query(query, (err, res) => {
         if (err) throw err;
-        console.log('\n');
-        console.log('VIEW ALL EMPLOYEES');
-        console.log('\n');
-        console.table(res);
-        prompt();
+        
+        figlet('VIEW ALL EMPLOYEES', function(err, data) {
+        if (err) {
+            console.log('Something went wrong...');
+            console.dir(err);
+            return;
+        }
+            console.log('\n');
+            // console.log(data)
+            lolcatjs.options.animate = Math.round(Math.random() * 1000);
+            lolcatjs.options.colors = true;
+            lolcatjs.fromString(data);
+            console.log('\n');
+            console.table(res);
+            prompt();
+        });
     });
 }
 
