@@ -1,4 +1,4 @@
-# *** EMPLOYEE-TRACK V2.0 - FIGLET | LOLCAT -MySQL ***
+# EMPLOYEE-TRACK V2.0 - FIGLET | LOLCAT -MySQL
 ![FIGLET FUNC](Assets/tech.png)
 # DESCRIPTION
 A command-line application that allows the user to:
