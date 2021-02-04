@@ -33,14 +33,14 @@ const connection = mysql.createConnection({
     password: 'Password12',
     database: 'employeesdb'
 });
-
+//Figlet
 connection.connect(err => {
     if (err) throw err;
     displayWelcome();
     
 });
 function displayWelcome() { 
-figlet('EMPLOYEE TRACKER V2.0', function(err, data) {
+figlet('Employee Track 2.0', function(err, data) {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
@@ -48,6 +48,7 @@ figlet('EMPLOYEE TRACKER V2.0', function(err, data) {
     }
     console.log('\n');
     // console.log(data)
+    //LOLCAT makes it log in rainbow.
     lolcatjs.options.seed = Math.round(Math.random() * 1000);
     lolcatjs.options.colors = true;
     lolcatjs.fromString(data);

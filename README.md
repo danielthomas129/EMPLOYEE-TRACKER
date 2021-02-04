@@ -1,6 +1,6 @@
-## *** EMPLOYEE-TRACKER-MySQL ***
+## *** EMPLOYEE-TRACK V2.0 - FIGLET | LOLCAT -MySQL ***
 
-## DESCRIPTION
+# DESCRIPTION
 A command-line application that allows the user to:
 
   * Add departments, roles, employees
@@ -23,30 +23,43 @@ So that I can organize and plan my business
 ## BUSINESS CONTEXT
 Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
 
-## SCREENSHOTS
+# SCREENSHOTS 
 
-The following animation demonstrates the application functionality:
+# FIGLET FUNCTION
+![FIGLET FUNC](Assets/rfunc.png)
+
+# FIGLET | LOLCAT
+-FIGLET WAS USED TO GIVE THEW FONT AND ADD ANIMATION AND LOLCAT WAS INSTALLED TO ADD DIFFERENT ANIMATION AND COLOR EFFECTS TO CLI. 
+
 ![Database Schema](Assets/r1.png)
+
+
 ![Database Schema](Assets/r2.png)
+
+
 ![Database Schema](Assets/r3.png)
-![Database Schema](Assets/ALLEMP.png)
-![Database Schema](Assets/pjson.png)
-![Database Schema](Assets/rfunc.png)
-![Database Schema](Assets/Employee-Tracker-MySql-App.gif)
-## CLICK THE ICON BELOW: VIDEO DEMO LINK
 
-[![VIDEO LINK]](https://drive.google.com/file/d/1f50F8O-9k8NITC6kPzom6TUnwOE2Ib5k/view)
+# GIF DEMO
+The following animation demonstrates the application functionality:
+![GIF APP DEMO](Assets/Employee-Track-v20-Filgetlolcat.gif)
+# CLICK THE ICON BELOW: VIDEO DEMO LINK
 
-## INSTALLATION
+[![VIDEO LINK]](https://drive.google.com/file/d/150QyniljzMkjGY1_6FkZ89qGTemecaQY/view)
+
+# INSTALLATION
 
 * ```npm init -y```
 * ```npm install mysql inquirer```
 * ```npm install console.table```
 * ```mysql -u root -p```
 
+# PACKAGE.JSON / DEPENDENCIES 
+![NPM START](Assets/pjson.png)
+![DEPENDENCIES](Assets/depend.png)
+
 If choosing to use from terminal, open terminal and run    
 ```npm start```   
-## DATABASE SCHEMA
+# DATABASE SCHEMA
 
 ![Database Schema](Assets/schema.png)
 ![Database Schema](Assets/WB.png)
@@ -71,7 +84,7 @@ If choosing to use from terminal, open terminal and run
   * **role_id** - INT to hold reference to role employee has
   * **manager_id** - INT to hold reference to another employee that manages the employee being Created. This field may be null if the employee has no manager
   
-## GitHub Repository & Deployed Site
+# GitHub Repository & Deployed Site
 *GitHub: [@danielthomas129](https://github.com/danielthomas129/EMPLOYEE-TRACKER-MySQL)
 *[Github-Repository](https://github.com/danielthomas129/EMPLOYEE-TRACKER-MySQL)
 
