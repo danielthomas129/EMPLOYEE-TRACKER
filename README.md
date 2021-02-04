@@ -1,5 +1,5 @@
 ## *** EMPLOYEE-TRACK V2.0 - FIGLET | LOLCAT -MySQL ***
-
+![FIGLET FUNC](Assets/tech.png)
 # DESCRIPTION
 A command-line application that allows the user to:
 
@@ -89,7 +89,7 @@ If choosing to use from terminal, open terminal and run
 *[Github-Repository](https://github.com/danielthomas129/EMPLOYEE-TRACKER-MySQL)
 
 - - -
-
+![FIGLET FUNC](Assets/dg.png)
 ### Daniel Thomas Guadalupe
   
   ## Questions?
