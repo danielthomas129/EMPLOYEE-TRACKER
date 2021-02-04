@@ -40,15 +40,20 @@ connection.connect(err => {
     
 });
 function displayWelcome() { 
-figlet('Welcome', function(err, data) {
+figlet('EMPLOYEE TRACKER V2.0', function(err, data) {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
         return;
     }
-    console.log(data)
+    console.log('\n');
+    // console.log(data)
+    lolcatjs.options.seed = Math.round(Math.random() * 1000);
+    lolcatjs.options.colors = true;
+    lolcatjs.fromString(data);
+    console.log('\n');
     prompt();
-});    
+});
 }
 
 
@@ -117,7 +122,7 @@ function viewAllEmployees() {
     connection.query(query, (err, res) => {
         if (err) throw err;
         
-        figlet('VIEW ALL EMPLOYEES', function(err, data) {
+        figlet('All Employees', function(err, data) {
         if (err) {
             console.log('Something went wrong...');
             console.dir(err);
@@ -125,7 +130,7 @@ function viewAllEmployees() {
         }
             console.log('\n');
             // console.log(data)
-            lolcatjs.options.animate = Math.round(Math.random() * 1000);
+            lolcatjs.options.seed = Math.round(Math.random() * 1000);
             lolcatjs.options.colors = true;
             lolcatjs.fromString(data);
             console.log('\n');
@@ -143,13 +148,24 @@ function viewByDepartment() {
     ORDER BY department.name;`;
     connection.query(query, (err, res) => {
         if (err) throw err;
-        console.log('\n');
-        console.log('VIEW EMPLOYEE BY DEPARTMENT');
-        console.log('\n');
-        console.table(res);
-        prompt();
-    });
-}
+         
+        figlet('Dept. Employees', function(err, data) {
+            if (err) {
+                console.log('Something went wrong...');
+                console.dir(err);
+                return;
+            }
+                console.log('\n');
+                // console.log(data)
+                lolcatjs.options.seed = Math.round(Math.random() * 1000);
+                lolcatjs.options.colors = true;
+                lolcatjs.fromString(data);
+                console.log('\n');
+                console.table(res);
+                prompt();
+            });
+        });
+    }
 
 
 function viewByManager() {
@@ -161,14 +177,24 @@ function viewByManager() {
     ORDER BY manager;`;
     connection.query(query, (err, res) => {
         if (err) throw err;
-        console.log('\n');
-        console.log('VIEW EMPLOYEE BY MANAGER');
-        console.log('\n');
-        console.table(res);
-        prompt();
-    });
-}
-
+  
+        figlet('Employee by MGR', function(err, data) {
+            if (err) {
+                console.log('Something went wrong...');
+                console.dir(err);
+                return;
+            }
+                console.log('\n');
+                // console.log(data)
+                lolcatjs.options.seed = Math.round(Math.random() * 1000);
+                lolcatjs.options.colors = true;
+                lolcatjs.fromString(data);
+                console.log('\n');
+                console.table(res);
+                prompt();
+            });
+        });
+    }
 function viewAllRoles() {
     const query = `SELECT role.title, employee.id, employee.first_name, employee.last_name, department.name AS department
     FROM employee
@@ -177,14 +203,24 @@ function viewAllRoles() {
     ORDER BY role.title;`;
     connection.query(query, (err, res) => {
         if (err) throw err;
-        console.log('\n');
-        console.log('VIEW EMPLOYEE BY ROLE');
-        console.log('\n');
-        console.table(res);
-        prompt();
-    });
-
-}
+  
+        figlet('Employee Roles', function(err, data) {
+            if (err) {
+                console.log('Something went wrong...');
+                console.dir(err);
+                return;
+            }
+                console.log('\n');
+                // console.log(data)
+                lolcatjs.options.seed = Math.round(Math.random() * 1000);
+                lolcatjs.options.colors = true;
+                lolcatjs.fromString(data);
+                console.log('\n');
+                console.table(res);
+                prompt();
+            });
+        });
+    }
 
 async function addEmployee() {
     const addname = await inquirer.prompt(askName());

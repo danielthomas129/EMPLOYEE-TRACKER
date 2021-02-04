@@ -26,9 +26,13 @@ Developers are often tasked with creating interfaces that make it easy for non-d
 ## SCREENSHOTS
 
 The following animation demonstrates the application functionality:
-
-![Database Schema](Assets/Employee-Tracker-MySql-App.gif)
+![Database Schema](Assets/r1.png)
+![Database Schema](Assets/r2.png)
+![Database Schema](Assets/r3.png)
 ![Database Schema](Assets/ALLEMP.png)
+![Database Schema](Assets/pjson.png)
+![Database Schema](Assets/rfunc.png)
+![Database Schema](Assets/Employee-Tracker-MySql-App.gif)
 ## CLICK THE ICON BELOW: VIDEO DEMO LINK
 
 [![VIDEO LINK]](https://drive.google.com/file/d/1f50F8O-9k8NITC6kPzom6TUnwOE2Ib5k/view)
@@ -41,7 +45,7 @@ The following animation demonstrates the application functionality:
 * ```mysql -u root -p```
 
 If choosing to use from terminal, open terminal and run    
-```node server.js```   
+```npm start```   
 ## DATABASE SCHEMA
 
 ![Database Schema](Assets/schema.png)
